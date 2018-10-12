@@ -1,6 +1,3 @@
-//This is actually a NodeJS file!
-//That's why there are some unfamiliar objects/functions in here....
-
 
 //Input file path is relative
 //Output file path is absolute
@@ -12,13 +9,12 @@ module.exports = {
     filename:"bundle.js"
   },
 
-  //Run this loader every time we come across a JS file
-  //In our case, we want to run Babel over every JS file, except the stuff in node_modules directory, because those are third-party imports already transpiled down to ES5
+ 
   module: {
-    //Rules array of objects
     rules: [
 
     //Rule for treating JS like JSX
+    //Ignore /node_modules/, which is already in ES5
     {
       loader: "babel-loader",
       test: /\.js$/, //Regex to identify all .js files

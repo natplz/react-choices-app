@@ -6,12 +6,14 @@ import AddOption from './AddOption';
 import CustomModal from './CustomModal';
 
 
-export default class IndecisionApp extends React.Component {
+export default class ChoicesApp extends React.Component {
   
+  subtitle = "Everybody got choices..."
   state = {
     options: [],
     selectedOption: undefined
   };
+
 
   handleClearSelectedOption = () => {
     this.setState(() => ({ selectedOption: undefined }) );
@@ -87,11 +89,9 @@ export default class IndecisionApp extends React.Component {
   
   //All React components must define render(), which returns JSX
   render() {
-    const subtitle = "Put your life in the hands of a computer.";
-    
     return (
       <div>
-        <Header subtitle={subtitle} />
+        <Header subtitle={this.subtitle} />
         <div className="container">
           <Action 
             hasOptions={this.state.options.length > 0}

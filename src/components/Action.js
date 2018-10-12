@@ -8,7 +8,7 @@ const Action = (props) => (
       onClick={props.handleChoose}
       disabled={!props.hasOptions} //Disabled if no options
     >
-      What should I do?
+      What should I choose?
     </button>
   </div>
 );
