@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/local/bin/node /Users/NatePelz/.npm-global/bin/yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+
+PATH: 
+  /Users/NatePelz/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/NatePelz/Desktop/Freelancing/UdemyReact/indecision_app/package.json: Unexpected token / in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at /Users/NatePelz/.npm-global/lib/node_modules/yarn/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/Users/NatePelz/.npm-global/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /Users/NatePelz/.npm-global/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  //Package.json outlines all dependencies our project needs in order to run
+  
+  {
+    "name": "indecision_app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Nate Pelz",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

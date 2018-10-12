@@ -1,0 +1,5 @@
+.container {
+  max-width: 60rem; /* Max width rather than width, so that mobile screens can shrink even more */
+  margin: 0 auto;
+  padding: 0 $m-size;
+}
